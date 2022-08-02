@@ -1,0 +1,27 @@
+name: "minimal-releaser"
+description: "minimal releaser"
+inputs:
+  token:
+    description: "github repo token"
+    required: true
+  secret:
+    description: "secret"
+    required: true
+  action:
+    description: "action"
+    required: true
+  version:
+    description: "version"
+    required: false
+  changeLog:
+    description: "changeLog"
+    required: false
+  changeLogFile:
+    description: "changeLog from a file"
+    required: false
+  files:
+    description: "file"
+    required: false
+runs:
+  using: "node16"
+  main: "dist/index.js"
